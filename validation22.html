@@ -1,0 +1,32 @@
+<html>
+<head>
+<script>
+function validate_form()
+{
+let x=document.myform.fname.value;
+let y=document.myform.fname1.value;
+if(x==""){
+alert("Name must be filled out");
+x.focus();
+return false;
+}
+if(x!=y)
+{
+alert("The password are not matching");
+x.focus();
+return false;
+}
+else return true;
+}
+</script>
+</head>
+<body>
+<h2>javascript validation</h2>
+
+<form name="myform" action="/action_page.php" onsumbit="return validate_form()" method="post">
+password<input type="password" name="fname"><br><br>
+Retype password<input type="password" name="fname1"><br><br>
+<input type="submit" value="submit">
+</form>
+</body>
+</html>
