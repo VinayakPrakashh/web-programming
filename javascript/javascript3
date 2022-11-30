@@ -1,0 +1,29 @@
+<html>
+    <head>
+
+    </head>
+    <script>
+        let sum=0;
+        let i = parseInt(prompt("enter first number"));
+        let i2 = parseInt(prompt("enter second number"));
+        document.write("1.addition 2.substraction 3.multiplication 4.division");
+        let n = parseInt(prompt("1.addition 2.substraction 3.multiplication 4.division\nselect which operation to perform"));
+        document.write("<br>");
+        switch(n){
+            case 1:sum=i+i2;
+            document.write("sum="+sum);
+            break;
+            case 2:sum=i-i2;
+            document.write("sum="+sum);
+            break;
+            case 3:sum=i*i2;
+            document.write("sum="+sum);
+            break;
+            case 4:sum=i/i2;
+            document.write("sum="+sum);
+            break;
+            default:document.write("enter valid value");
+        }
+    </script>
+
+</html>
