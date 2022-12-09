@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+function validate()
+{
+if(document.form.branch.SelectedIndex=="")
+{
+alert("please select your branch!");
+return false;
+}
+var sel=document.getElementById("branch id");
+var selected text=sel.options[sel.selectedIndex].text;
+alert("you have selected:"+selectText);
+return true;
+}
+</script>
+<body>
+<form name="form" method="post" onsubmit="return validate()">
+select your branch<select name="branch" id="branch id">
+<option value="select">select</option>
+<option value="a">computer</option>
+<option value="b">electronics</option>
+<option value="c">mechanical</option>
+</select>
+<input type="submit" name="submit" value="submit">
+</body>
+</form>
+</html>
