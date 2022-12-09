@@ -3,21 +3,24 @@
 <script>
 function validate()
 {
-if(document.form.branch.SelectedIndex=="")
+var sel=document.getElementById("branch");
+var selectText=sel.options[sel.selectedIndex].text;
+if(selectText=="select")
 {
 alert("please select your branch!");
 return false;
 }
-var sel=document.getElementById("branch id");
-var selected text=sel.options[sel.selectedIndex].text;
+else{
+
 alert("you have selected:"+selectText);
 return true;
 }
+}
 </script>
 <body>
-<form name="form" method="post" onsubmit="return validate()">
-select your branch<select name="branch" id="branch id">
-<option value="select">select</option>
+<form name="form" action="hi.php" method="post" onsubmit="return validate()">
+select your branch<select name="branch" id="branch">
+<option value="select" selected>select</option>
 <option value="a">computer</option>
 <option value="b">electronics</option>
 <option value="c">mechanical</option>
