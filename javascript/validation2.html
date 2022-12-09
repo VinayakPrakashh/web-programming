@@ -17,16 +17,20 @@ alert("The password are not matching");
 x.focus();
 return false;
 }
-else return true;
+else{
+myform.reset();
+myform.submit();
+
+}
 }
 </script>
 </head>
 <body>
 <h2>javascript validation</h2>
-<form name="myform" action="/action_page.php" onsubmit="return validate_form()" method="post">
+<form action="new.php" name="myform"  method="post">
 Password<input type="password"name="fname"><br><br>
 Retype password<input type="password"name="fname1"><br><br>
-<input type="submit"value="submit">
+<input type="button" name="SubmitButton" value="submit" onClick="return validate_form(this.myform)" >
 </form>
 </body>
 </html>
