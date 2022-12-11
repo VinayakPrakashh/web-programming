@@ -1,0 +1,26 @@
+<html>
+    <script>
+        var Time_of_The_Day=new Date()
+        var hours=Time_of_The_Day.getHours()
+         
+        if (hours>=5&&hours<=11) 
+     
+        document.write('<h2>Hello! Good Morning! Have a nice day.</h2>')
+        else if (hours==12) 
+  
+        document.write('<h2>Good Noon Visitor! </h2>')
+        else if (hours>=13&&hours<=17) 
+      
+        document.write('Example:<h2 style="color:#1982d1;">Good Afternoon! </h2>')
+        else if (hours>=18&&hours<=20) 
+      
+        document.write('<h2>Good Evening! </h2>')
+        else if (hours>=21&&hours<=11) 
+   
+        document.write('<h2>Good Night! </h2>')
+        else 
+   
+        document.write('<h2>Wow! You`re still awake. Working Late?</h2>')
+         
+        </script>
+</html>
