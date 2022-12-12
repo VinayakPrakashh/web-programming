@@ -17,7 +17,7 @@ if(empty($uname)){
     exit();
 }
 else if(empty($pass)){
-    header("Location: index.php?eroor=Password is required");
+    header("Location: index.php?error=Password is required");
     exit();
 }
 $sql = "SELECT * FROM users WHERE user_name='$uname' AND password='$pass'";
@@ -29,7 +29,7 @@ if($row['user_name']=== $uname && $row['password'] === $pass){
     $_SESSION['user_name'] = $row['user_name'];
     $_SESSION['m\name'] = $row['name'];
     $_SESSION['id'] = $row['id'];
-    header("location: home.php");
+    header("location: home2.php");
     exit();
 }
 else{
