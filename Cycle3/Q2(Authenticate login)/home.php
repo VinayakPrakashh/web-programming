@@ -12,8 +12,6 @@ $row = mysqli_fetch_assoc($result);
 if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 }?><body>
             <h1>Hello, <?php echo $_SESSION['user_name']; ?></h1>
-            <h1>Admissionno, <?php echo $_SESSION['admno']; ?></h1>
-            <h1>Phone NO, <?php echo $_SESSION['phone']; ?></h1>
             <a href="logout.php">LOGOUT</a>
     </body>
 </html>

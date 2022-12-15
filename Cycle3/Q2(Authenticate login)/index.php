@@ -18,7 +18,6 @@
         <input type="password" name="password" placeholder="Password"><br>
 
         <button type="submit">LOGIN</button>
-        Not Registered?<a href="register.php">Register Here</a>
     </form>
     </body>
 </html>
