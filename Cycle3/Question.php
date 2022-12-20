@@ -1,5 +1,7 @@
 <html>
     <head><H1> QUIZ </H1></head>
+
+
     <body>
         <form name="questform" action="" method="post">
             Q1. What is the main component of a computer system?<br>
@@ -47,6 +49,9 @@ if(array_key_exists('submit',$_POST)){
                 if($_POST['q5']=="3" ){
                     $cs++;  
                     }
-    echo "You answered $cs out of $tq questions";    
+    echo "You answered $cs out of $tq questions";
+    echo "<br>";
+    echo "Answers\nQ1.c\nQ2.d\nQ3.a\nQ4.a\nQ5.c";
+   
                 }   
     ?>    
