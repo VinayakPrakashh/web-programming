@@ -11,16 +11,90 @@
     }
   </style>
   <script>
-    function tterms() {
-      let t = myform.terms.checked;
+    
+   
+   
+  
+   
+    
+    function names() {
+      let x = document.myform.fname.value;
+      let y = document.myform.lname.value;
 
-      if (!t) {
-        alert("accept the terms  and conditions to continue");
-        myform.terms.focus();
+      if (x == "" || y == "") {
+        alert("name must be filled");
         return false;
-      } else return true;
+      }
+      if (/^[A-Za-z ]+$/.test(x) && /^[A-Za-z ]+$/.test(y)) {
+        return ages();
+      } else {
+        alert("enter valid name");
+        return false;
+      }
     }
-    function pass() {
+     function ages() {
+      let z = document.myform.age.value;
+
+      if (z == "") {
+        alert("Please choose the date of birth");
+        return false;
+      } else {
+        return Gender();
+      }
+    }
+    function getage() {
+      var Bdate = document.getElementById("date").value;
+      var Bday = +new Date(Bdate);
+      Q4A = ~~((Date.now() - Bday) / 31557600000);
+      document.myform.age.value = Q4A;
+    }
+      
+    function Gender() {
+      if (
+        myform.gender[0].checked == false &&
+        myform.gender[1].checked == false
+      ) {
+        alert("Please choose your Gender: Male or Female");
+        return false;
+      } else {
+        return branches();
+      }
+    }
+    function branches() {
+      var sel = document.getElementById("branch");
+      var selectText = sel.options[sel.selectedIndex].text;
+      if (selectText == "select") {
+        alert("please select your branch!");
+        return false;
+      } else {
+        return sem();
+      }
+    }
+    function sem() {
+      var sel = document.getElementById("branch2");
+      var selectText = sel.options[sel.selectedIndex].text;
+      if (selectText == "select") {
+        alert("Select your current semester");
+        return false;
+      } else {
+        return phemail();
+      }
+    }
+     function phemail() {
+      let x = document.myform.number.value;
+      let y = document.myform.mail.value;
+
+      if (x == "") {
+        alert("Enter your phone number");
+        return false;
+      } else if (y == "") {
+        alert("Enter your email id");
+        return false;
+      } else {
+        return pass();
+      }
+    }
+     function pass() {
       let x = document.myform.password.value;
       let y = document.myform.password2.value;
       if (x == "") {
@@ -40,81 +114,14 @@
         return false;
       }
     }
-    function phemail() {
-      let x = document.myform.number.value;
-      let y = document.myform.mail.value;
+    function tterms() {
+      let t = myform.terms.checked;
 
-      if (x == "") {
-        alert("Enter your phone number");
+      if (!t) {
+        alert("accept the terms  and conditions to continue");
+        myform.terms.focus();
         return false;
-      } else if (y == "") {
-        alert("Enter your email id");
-        return false;
-      } else {
-        return pass();
-      }
-    }
-    function sem() {
-      var sel = document.getElementById("branch2");
-      var selectText = sel.options[sel.selectedIndex].text;
-      if (selectText == "select") {
-        alert("Select your current semester");
-        return false;
-      } else {
-        return phemail();
-      }
-    }
-    function branches() {
-      var sel = document.getElementById("branch");
-      var selectText = sel.options[sel.selectedIndex].text;
-      if (selectText == "select") {
-        alert("please select your branch!");
-        return false;
-      } else {
-        return sem();
-      }
-    }
-    function ages() {
-      let z = document.myform.age.value;
-
-      if (z == "") {
-        alert("Please choose the date of birth");
-        return false;
-      } else {
-        return Gender();
-      }
-    }
-    function Gender() {
-      if (
-        myform.gender[0].checked == false &&
-        myform.gender[1].checked == false
-      ) {
-        alert("Please choose your Gender: Male or Female");
-        return false;
-      } else {
-        return branches();
-      }
-    }
-    function names() {
-      let x = document.myform.fname.value;
-      let y = document.myform.lname.value;
-
-      if (x == "" || y == "") {
-        alert("name must be filled");
-        return false;
-      }
-      if (/^[A-Za-z ]+$/.test(x) && /^[A-Za-z ]+$/.test(y)) {
-        return ages();
-      } else {
-        alert("enter valid name");
-        return false;
-      }
-    }
-    function getage() {
-      var Bdate = document.getElementById("date").value;
-      var Bday = +new Date(Bdate);
-      Q4A = ~~((Date.now() - Bday) / 31557600000);
-      document.myform.age.value = Q4A;
+      } else return true;
     }
   </script>
   <body>
