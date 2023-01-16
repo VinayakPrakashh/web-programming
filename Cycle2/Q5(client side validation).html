@@ -11,12 +11,6 @@
     }
   </style>
   <script>
-    
-   
-   
-  
-   
-    
     function names() {
       let x = document.myform.fname.value;
       let y = document.myform.lname.value;
@@ -32,7 +26,7 @@
         return false;
       }
     }
-     function ages() {
+    function ages() {
       let z = document.myform.age.value;
 
       if (z == "") {
@@ -48,7 +42,7 @@
       Q4A = ~~((Date.now() - Bday) / 31557600000);
       document.myform.age.value = Q4A;
     }
-      
+
     function Gender() {
       if (
         myform.gender[0].checked == false &&
@@ -80,7 +74,7 @@
         return phemail();
       }
     }
-     function phemail() {
+    function phemail() {
       let x = document.myform.number.value;
       let y = document.myform.mail.value;
 
@@ -94,7 +88,7 @@
         return pass();
       }
     }
-     function pass() {
+    function pass() {
       let x = document.myform.password.value;
       let y = document.myform.password2.value;
       if (x == "") {

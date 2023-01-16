@@ -3,8 +3,8 @@ require_once('db_connection.php');
 ?>
 <html>
 
-    
-    <head>REGISTRATION
+
+<head>REGISTRATION
 </head>
 <?php
 if (isset($_POST['register'])) {
@@ -12,13 +12,14 @@ if (isset($_POST['register'])) {
     $admissionno = $_POST['admno'];
     $phone = $_POST['phoneno'];
     $passwrd = $_POST['password'];
-   mysqli_query($conn,"INSERT INTO users (user_name,admno,phone,passwrd) VALUES('$uname','$admissionno','$phone','$passwrd')");
+    mysqli_query($conn, "INSERT INTO users (user_name,admno,phone,passwrd) VALUES('$uname','$admissionno','$phone','$passwrd')");
 }
 ?>
+
 <body>
     <form action="" method="POST">
 
-       <label>User Name:</label>
+        <label>User Name:</label>
         <input type="text" name="username" placeholder="User Name:">
         <br>
         <label>Admission No:</label>
@@ -36,4 +37,5 @@ if (isset($_POST['register'])) {
         Already Registered?<a href="index.php">login</a>
     </form>
 </body>
+
 </html>

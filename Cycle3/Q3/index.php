@@ -1,16 +1,17 @@
 <html>
 
-    <head>
-        <title>LOGIN</title>
-        
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    
-    <body>
-        <form action="login.php" method="post"><h2>LOGIN</h2>
-        <?php if(isset($_GET['error'])){ ?>
-            
-        <p class="error"> <?php echo $_GET['error']; ?></p>
+<head>
+    <title>LOGIN</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <form action="login.php" method="post">
+        <h2>LOGIN</h2>
+        <?php if (isset($_GET['error'])) { ?>
+
+            <p class="error"> <?php echo $_GET['error']; ?></p>
         <?php } ?>
         <label>User Name</label>
         <input type="text" name="uname" placeholder="User Name"><br>
@@ -20,5 +21,6 @@
         <button type="submit">LOGIN</button>
         Not Registered?<a href="register.php">Register Here</a>
     </form>
-    </body>
+</body>
+
 </html>
