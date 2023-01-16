@@ -2,62 +2,8 @@
   <head>
     <h1 style="text-align: center">Client side validation</h1>
   </head>
- 
+
   <script>
-    function tterms() {
-      let t = myform.terms.checked;
-
-      if (!t) {
-        alert("accept the terms  and conditions to continue");
-        myform.terms.focus();
-        return false;
-      } else return true;
-    }
-    function pass() {
-      let x = document.myform.password.value;
-      let y = document.myform.password2.value;
-      if (x == "") {
-        alert("Enter password");
-
-        return false;
-      } else if (x != y) {
-        alert("The password are not matching");
-
-        return false;
-      } else if (/^[A-Za-z]\w{7,14}$/.test(x) && /^[A-Za-z]\w{7,14}$/.test(y)) {
-        return tterms();
-      } else {
-        alert(
-          "password not valid"
-        );
-        return false;
-      }
-    }
-    function phemail() {
-      let x = document.myform.number.value;
-      let y = document.myform.mail.value;
-
-      if (x == "") {
-        alert("Enter your phone number");
-        return false;
-      } else if (y == "") {
-        alert("Enter your email id");
-        return false;
-      } else {
-        return pass();
-      }
-    }
-    function Gender() {
-      if (
-        myform.gender[0].checked == false &&
-        myform.gender[1].checked == false
-      ) {
-        alert("Please choose your Gender: Male or Female");
-        return false;
-      } else {
-        return phemail();
-      }
-    }
     function names() {
       let x = document.myform.fname.value;
       let y = document.myform.lname.value;
@@ -67,10 +13,69 @@
         return false;
       }
       if (/^[A-Za-z ]+$/.test(x) && /^[A-Za-z ]+$/.test(y)) {
-        return Gender();
+        return dates();
       } else {
         alert("enter valid name");
         return false;
+      }
+      function dates() {
+        let x = document.getElementById("date").value;
+        if (x == "") {
+          alert("please choose a date");
+          return false;
+        } else {
+          return Gender();
+        }
+      }
+
+      function Gender() {
+        if (
+          myform.gender[0].checked == false &&
+          myform.gender[1].checked == false
+        ) {
+          alert("Please choose your Gender: Male or Female");
+          return false;
+        } else {
+          return phemail();
+        }
+      }
+      function phemail() {
+        let x = document.myform.number.value;
+        let y = document.myform.mail.value;
+
+        if (x == "") {
+          alert("Enter your phone number");
+          return false;
+        } else if (y == "") {
+          alert("Enter your email id");
+          return false;
+        } else {
+          return pass();
+        }
+      }
+      function pass() {
+        let x = document.myform.password.value;
+        let y = document.myform.password2.value;
+        if (x == "") {
+          alert("Enter password");
+
+          return false;
+        } else if (x != y) {
+          alert("The password are not matching");
+
+          return false;
+        } else {
+          return tterms();
+        }
+      }
+      function tterms() {
+        let t = myform.terms.checked;
+
+        if (!t) {
+          alert("accept the terms  and conditions to continue");
+          myform.terms.focus();
+          return false;
+        } else return true;
       }
     }
   </script>
