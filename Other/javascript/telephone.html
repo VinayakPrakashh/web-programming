@@ -49,29 +49,36 @@
   </script>
   <body>
     <form name="form" onsubmit="return address()" method="post">
-      Address of the client : <textarea id="ta" name="ta"></textarea><br />
-      District :
-      <select name="select" id="select">
-        <option value="select" selected>select</option>
-        <option value="erk">Ernakulam</option>
-        <option value="kot">Kottayam</option>
-        <option value="mal">Malappuram</option>
-      </select>
-      <br />
-      Services required:
-      <input
-        type="radio"
-        name="services"
-        value="services"
-        id="1"
-      />Inquiry<br />
-      <input type="radio" name="services" value="services" id="2" />Repair<br />
-      <input type="radio" name="services" value="services" id="3" />New
-      connection<br />
-      <input type="checkbox" name="terms" id="terms" />I agree to the terms and
-      conditions<br />
-      <input type="submit" value="submit" />
-      <input type="reset" value="Reset" />
+      <p align="center">
+        Address of the client : <textarea id="ta" name="ta"></textarea><br />
+        District :
+        <select name="select" id="select">
+          <option value="select" selected>select</option>
+          <option value="erk">Ernakulam</option>
+          <option value="kot">Kottayam</option>
+          <option value="mal">Malappuram</option>
+        </select>
+        <br />
+        Services required:
+        <input
+          type="radio"
+          name="services"
+          value="services"
+          id="1"
+        />Inquiry<br />
+        <input
+          type="radio"
+          name="services"
+          value="services"
+          id="2"
+        />Repair<br />
+        <input type="radio" name="services" value="services" id="3" />New
+        connection<br />
+        <input type="checkbox" name="terms" id="terms" />I agree to the terms
+        and conditions<br />
+        <input type="submit" value="submit" />
+        <input type="reset" value="Reset" />
+      </p>
     </form>
   </body>
 </html>
