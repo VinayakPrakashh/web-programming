@@ -1,5 +1,5 @@
 ### Turtorial
-(A). How to create and open html programs??(in ubuntu)
+(A). How to create and open ***html(JavaScript)*** programs??(in ubuntu) 
 
 1. Oreate a folder with your name(any name) on the desktop 
  ( ***right-click ->new folder*** )
@@ -54,4 +54,13 @@
    ![13](https://user-images.githubusercontent.com/101159818/227764564-80780855-19b1-4671-8131-f68a9d1ce669.png)
 
    3) now try starting Apache Web Server again
-8. If all are Ok then we can proceed , 
+8. If all are Ok then we can proceed.
+9. Oreate a folder with your name(any name) on the desktop 
+ ( ***right-click ->new folder*** )
+![14](https://user-images.githubusercontent.com/101159818/227764830-42ea914b-7c8d-420d-8d2d-d83586ce2116.png)
+
+10. Now Open Terminal and Type ***'cd Desktop/folder_name'**** and then hit Enter.
+    ![15](https://user-images.githubusercontent.com/101159818/227764864-966427d3-8889-4116-9632-3a054fae5f5b.png)
+11. Now Type following ***'gedit file_name.php'*** and hit enter.
+    ![16](https://user-images.githubusercontent.com/101159818/227764950-87e80a80-8956-41fb-8de0-0e5b05b6eb27.png)
+
