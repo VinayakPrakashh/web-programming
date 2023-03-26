@@ -25,5 +25,33 @@
    
 7. Done
 
-(B). How to create and
+(B). How to create and Run php programs
+ 
+1. first you need to check whether you have xampp installed
+   To do that open Home->Other Locations->computer->opt
+   Check is there a folder named ***lampp*** if yes then you can proceed.
    
+   ![7](https://user-images.githubusercontent.com/101159818/227763659-4ccbd3f9-b2f5-4fa4-80e6-25a77afa889e.png)
+2. Now open terminal (***ctrl+alt+T***) then type the following ***'sudo /opt/lampp/manager-linux-x64.run'***
+   ![9](https://user-images.githubusercontent.com/101159818/227763812-2f225c73-9642-42a4-933a-fb17cc18698a.png)
+
+3. Now the xampp will open after that choose ***manage servers***
+   ![10](https://user-images.githubusercontent.com/101159818/227763870-242b23b6-54bf-403c-9c47-3f0d7e03606c.png)
+4. Now click on ***Start All*** you should see all servers are started running like this,
+   
+   ![11](https://user-images.githubusercontent.com/101159818/227763969-79a11772-0fba-4ca5-ac0e-329525d0598c.png)
+   
+5. If ***Mysql Databse*** or ***Apache Web Server*** didn't start running try this steps,
+6. 
+   If Mysql Database Not starting,
+      1) Click on ***Mysql Database*** and select ***Configure***
+      2) change the ***port*** From ***3306*** to ***3307***
+      ![12](https://user-images.githubusercontent.com/101159818/227764205-8b970eea-6252-4fa8-8f3c-bcb9c5c843ae.png)
+
+      3) click Ok and start Mysql Databse again
+7. If Apache Web Server not starting,
+   1) open terminal and type following ***'sudo apt remove apache2'*** hit Enter.
+   ![13](https://user-images.githubusercontent.com/101159818/227764564-80780855-19b1-4671-8131-f68a9d1ce669.png)
+
+   3) now try starting Apache Web Server again
+8. If all are Ok then we can proceed , 
