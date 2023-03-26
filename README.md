@@ -1,5 +1,5 @@
 ### Turtorial
-(A). How to create and open ***html(JavaScript)*** programs??(in ubuntu) 
+### (A). How to create and open ***html(JavaScript)*** programs??(in ubuntu) 
 
 1. Oreate a folder with your name(any name) on the desktop 
  ( ***right-click ->new folder*** )
@@ -25,7 +25,7 @@
    
 7. Done
 
-(B). How to create and Run php programs
+### (B). How to create and Run php programs
  
 1. first you need to check whether you have xampp installed
    To do that open Home->Other Locations->computer->opt
