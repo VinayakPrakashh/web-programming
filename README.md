@@ -63,4 +63,22 @@
     ![15](https://user-images.githubusercontent.com/101159818/227764864-966427d3-8889-4116-9632-3a054fae5f5b.png)
 11. Now Type following ***'gedit file_name.php'*** and hit enter.
     ![16](https://user-images.githubusercontent.com/101159818/227764950-87e80a80-8956-41fb-8de0-0e5b05b6eb27.png)
+12. type Your php code and then click on save.
+    ![17](https://user-images.githubusercontent.com/101159818/227765006-4a13917c-8306-4110-949b-661acb6eeddf.png)
+13. Now close the file and go to previous terminal and type the following ***'sudo nautilus'*** and hit enter.
+    ![18](https://user-images.githubusercontent.com/101159818/227765080-7df3ee21-1bb6-467c-8f05-6f67bf3fccb2.png)
+14. From the opened window open the following folder path is ***Other locations->Computer->opt->lampp->htdocs***  then u should see this folder,
+    ![19](https://user-images.githubusercontent.com/101159818/227765195-5a9e7e03-2612-4ce4-8bd8-67b25f2618dc.png)
+15. Now u need to open Your folder that You have created which has the php file.
+   ![22](https://user-images.githubusercontent.com/101159818/227765319-033dba49-689c-4ff5-a62c-c402beb76f34.png)
 
+    
+16. Just drag Your php file to ***htdocs*** folder
+   ![20](https://user-images.githubusercontent.com/101159818/227765236-0f8aafa2-6034-4a09-a7b3-84c8e883e578.png)
+17. That's it! Now Open firefox and type following ***'localhost/file_name.php'***  (replace file_name with your php filename)
+    ![23](https://user-images.githubusercontent.com/101159818/227765390-bbc212b3-6984-4a71-adbc-f383fe676071.png)
+18. Hit Enter. All Done!
+    ![24](https://user-images.githubusercontent.com/101159818/227765435-d835494a-62f0-462a-a79e-6ef92d6b5916.png)
+
+
+ 
