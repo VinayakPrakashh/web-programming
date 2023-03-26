@@ -21,7 +21,7 @@ if (array_key_exists('submit', $_POST)) {
 <body>
     <form method="post">
         <h2>LOGIN</h2>
-        
+
         <label>User Name</label>
         <input type="text" name="uname" placeholder="User Name"><br>
         <label>Password</label>
