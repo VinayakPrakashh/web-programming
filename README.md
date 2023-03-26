@@ -5,7 +5,7 @@
   ## [ right-click ->new folder ]
    
    ![1](https://user-images.githubusercontent.com/101159818/227761929-2971b3af-6e0d-4746-96a1-6a9f8c30c08d.png)
-2. Open terminal by pressing ctrl+alt+T or by going to applications->system tools->terminal
+2. Open terminal by pressing ***ctrl+alt+T*** or by going to applications->system tools->terminal
  
    ![2](https://user-images.githubusercontent.com/101159818/227762004-680d18bf-1944-49b5-813f-1f4eba778e9d.png)
 3. Type 'cd Desktop/folder_name' and then hit Enter.
